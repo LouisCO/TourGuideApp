@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/sixteen"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.tourguideapp.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom=".5dp">
+
+        <TextView
+            android:id="@+id/category_name"
+            style="@style/category_style"
+            android:layout_marginStart="@dimen/eight"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintEnd_toStartOf="@id/bullet"
+            tools:text="Category name" />
+
+        <TextView
+            android:id="@+id/bullet"
+            style="@style/category_style"
+            android:layout_height="wrap_content"
+            android:text="@string/bullet"
+            android:paddingStart="@dimen/five"
+            android:paddingEnd="@dimen/five"
+            app:layout_constraintStart_toEndOf="@+id/category_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/place_description"
+            style="@style/category_style"
+            app:layout_constraintStart_toEndOf="@+id/bullet"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="description" />
+
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/twenty_four"
+            android:paddingTop="@dimen/twenty_four"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/thirtysix_sp"
+            app:layout_constraintTop_toBottomOf="@+id/category_name"
+            tools:text="Place Name" />
+
+        <TextView
+            android:id="@+id/description_ext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="@string/lorem_ipsum"
+            android:textSize="@dimen/twentyfour_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/open_time" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/detail_data_style"
+            android:text="@string/here_comes_address"
+            app:layout_constraintStart_toEndOf="@+id/address_img"
+            app:layout_constraintTop_toBottomOf="@+id/place_name" />
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/detail_data_style"
+            android:text="@string/here_comes_phone_no"
+            app:layout_constraintStart_toEndOf="@id/phone_img"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <TextView
+            android:id="@+id/web"
+            style="@style/detail_data_style"
+            android:text="@string/here_comes_website"
+            app:layout_constraintStart_toEndOf="@id/web_img"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/open_time"
+            style="@style/detail_data_style"
+            android:text="@string/here_come_opening_hours"
+            app:layout_constraintStart_toEndOf="@id/open_img"
+            app:layout_constraintTop_toBottomOf="@+id/web" />
+
+        <ImageView
+            android:id="@+id/address_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/location_icon"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/phone"
+            app:layout_constraintRight_toLeftOf="@id/address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place_name"
+            app:srcCompat="@drawable/ic_location" />
+
+        <ImageView
+            android:id="@+id/phone_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/phone_icon"
+            app:layout_constraintBottom_toTopOf="@id/web"
+            app:layout_constraintEnd_toStartOf="@id/phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            app:srcCompat="@drawable/ic_phone" />
+
+        <ImageView
+            android:id="@+id/web_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/http_icon"
+            app:layout_constraintBottom_toTopOf="@id/open_time"
+            app:layout_constraintEnd_toStartOf="@id/web"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            app:srcCompat="@drawable/ic_http" />
+
+        <ImageView
+            android:id="@+id/open_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/time_icon"
+            app:layout_constraintBottom_toTopOf="@id/description_ext"
+            app:layout_constraintEnd_toStartOf="@id/open_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/web"
+            app:srcCompat="@drawable/ic_watch_later" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

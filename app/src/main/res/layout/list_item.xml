@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/two">
+
+    <ImageView
+        android:id="@+id/place_image"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/hundred_fifty"
+        android:contentDescription="@string/location_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/two"
+        android:layout_marginStart="@dimen/sixteen"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sixteen_sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/place_description"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/place_description"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:layout_marginEnd="@dimen/sixteen"
+        android:layout_marginStart="@dimen/sixteen"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintBottom_toBottomOf="@+id/place_image"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+
+    <string name="see_category">Seeing</string>
+    <string name="art_category"><![CDATA[Art & Culture]]></string>
+    <string name="dine_category">Dining</string>
+    <string name="shop_category">Shopping</string>
+    <string name="stay_category">Staying</string>
+
+    <string-array name="categories">
+        <item>@string/see_category</item>
+        <item>@string/art_category</item>
+        <item>@string/dine_category</item>
+        <item>@string/shop_category</item>
+        <item>@string/stay_category</item>
+
+    </string-array>
+    <string name="title_activity_detail">""</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, eos ei consequat aliquando intellegebat,
+        id dolore percipit usu. Ei pro falli populo, ei vis vero porro omnesque. Ut has tempor
+        voluptatum, conceptam neglegentur at his, te ubique forensibus est. Eu mea noster accusam
+        abhorreant. Eam agam lobortis adipiscing cu. Aeterno invidunt ei eos, et mandamus conceptam
+        duo. Id has aeque oblique repudiandae. Natum aeterno nam te, in aperiri eloquentiam quo.
+        Volutpat deseruisse appellantur sed ea. Iudico fabulas efficiendi an eos, sonet mucius
+        consetetur eu eos, soluta abhorreant ea mei. Est ne inermis delectus efficiendi.</string>
+    <string name="location_icon">location icon</string>
+    <string name="phone_icon">phone icon</string>
+    <string name="http_icon">http icon</string>
+    <string name="time_icon">time icon</string>
+    <string name="bullet">•</string>
+    <string name="here_comes_address">Here comes address</string>
+    <string name="here_comes_phone_no">Here comes phone no.</string>
+    <string name="here_comes_website">Here comes website</string>
+    <string name="here_come_opening_hours">Here come opening hours</string>
+    <string name="location_image">location image</string>
+    <string name="web">romaniatourism.com/bucharest.html</string>
+    <string name="latitude">44.435525</string>
+    <string name="longitude">26.102512</string>
+</resources>

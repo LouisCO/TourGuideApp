@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="hundred_fifty">150dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="sixteen_sp">16sp</dimen>
+    <dimen name="twelve_sp">12sp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="twenty_four">24dp</dimen>
+    <dimen name="thirtysix_sp">36sp</dimen>
+    <dimen name="twentyfour_sp">24sp</dimen>
+    <dimen name="five">5dp</dimen>
+</resources>
