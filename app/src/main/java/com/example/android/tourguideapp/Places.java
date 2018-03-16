@@ -6,10 +6,9 @@ package com.example.android.tourguideapp;
 
 class Places {
 
-    private static final int NO_IMAGE_PROVIDED=-1;
     private String name;
     private String description;
-    private int imageResourceId=NO_IMAGE_PROVIDED;
+    private int imageResourceId;
 
     /**
      * Constructor
@@ -36,10 +35,4 @@ class Places {
         return this.imageResourceId;
     }
 
-    /**
-     * Returns whether or not there is an image associated
-     */
-    boolean hasImage() {
-        return this.imageResourceId != NO_IMAGE_PROVIDED;
-    }
 }

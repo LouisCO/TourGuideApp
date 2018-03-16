@@ -23,16 +23,15 @@
             android:textColor="@android:color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_constraintEnd_toStartOf="@id/bullet"
-            tools:text="Category name" />
+            tools:layout_constraintEnd_toStartOf="@id/bullet" />
 
         <TextView
             android:id="@+id/bullet"
             style="@style/category_style"
             android:layout_height="wrap_content"
-            android:text="@string/bullet"
-            android:paddingStart="@dimen/five"
             android:paddingEnd="@dimen/five"
+            android:paddingStart="@dimen/five"
+            android:text="@string/bullet"
             app:layout_constraintStart_toEndOf="@+id/category_name"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,8 +39,7 @@
             android:id="@+id/place_description"
             style="@style/category_style"
             app:layout_constraintStart_toEndOf="@+id/bullet"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="description" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/place_name"
@@ -51,8 +49,7 @@
             android:paddingTop="@dimen/twenty_four"
             android:textColor="@android:color/black"
             android:textSize="@dimen/thirtysix_sp"
-            app:layout_constraintTop_toBottomOf="@+id/category_name"
-            tools:text="Place Name" />
+            app:layout_constraintTop_toBottomOf="@+id/category_name" />
 
         <TextView
             android:id="@+id/description_ext"

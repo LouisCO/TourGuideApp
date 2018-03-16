@@ -38,12 +38,8 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
         Places place=this.places.get(position);
         holder.name.setText(place.getName());
         holder.description.setText(place.getDescription());
-        if (place.hasImage()) {
-            holder.image.setImageResource(place.getImageResourceId());
-            holder.image.setVisibility(View.VISIBLE);
-        } else {
-            holder.image.setVisibility(View.GONE);
-        }
+        holder.image.setImageResource(place.getImageResourceId());
+
     }
 
     @Override

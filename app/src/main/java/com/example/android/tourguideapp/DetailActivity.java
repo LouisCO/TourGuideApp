@@ -51,13 +51,12 @@ public class DetailActivity extends AppCompatActivity {
         String placeName=detail.getStringExtra("place_name");
         String placeDescription=detail.getStringExtra("place_description");
         int placeImage=detail.getIntExtra("place_image", 0);
-        String category=detail.getStringExtra("category");
+        String detailCategory=detail.getStringExtra("category");
 
-        textView.setText(category);
+        textView.setText(detailCategory);
         textView1.setText(placeDescription);
         textView2.setText(placeName);
         imageView.setImageResource(placeImage);
-
     }
 
     // Set onClick events using Butterknife
