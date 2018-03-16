@@ -12,18 +12,7 @@ class Places {
     private int imageResourceId=NO_IMAGE_PROVIDED;
 
     /**
-     * Constructor with 2 params in case of lack of image
-     *
-     * @param name        is the place's name
-     * @param description is a short description of the place
-     */
-    public Places(String name, String description) {
-        this.name=name;
-        this.description=description;
-    }
-
-    /**
-     * Constructor with 3 params
+     * Constructor
      *
      * @param name            is the place's name
      * @param description     is a short description of the place
